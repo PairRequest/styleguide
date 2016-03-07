@@ -1,0 +1,78 @@
+/* Settings */
+
+@import 'obsidian.css/lib/settings/obsidian.colors';
+@import 'obsidian.css/lib/settings/obsidian.settings';
+@import 'obsidian.css/lib/settings/obsidian.mq';
+
+/* Generic */
+
+@import 'obsidian.css/lib/generic/obsidian.reset';
+
+/* Elements */
+
+@import 'obsidian.css/lib/elements/obsidian.headlines';
+@import 'obsidian.css/lib/elements/obsidian.tables';
+@import 'obsidian.css/lib/elements/obsidian.forms';
+@import 'obsidian.css/lib/elements/obsidian.lists';
+@import 'obsidian.css/lib/elements/obsidian.links';
+@import 'obsidian.css/lib/elements/obsidian.images';
+
+/* Objects */
+
+@import 'obsidian.css/lib/objects/obsidian.icons';
+@import 'obsidian.css/lib/objects/obsidian.containers';
+@import 'obsidian.css/lib/objects/obsidian.grid';
+@import 'obsidian.css/lib/objects/obsidian.intrinsic';
+@import 'obsidian.css/lib/objects/obsidian.flex';
+@import 'obsidian.css/lib/objects/obsidian.btns';
+@import 'obsidian.css/lib/objects/obsidian.media';
+@import 'obsidian.css/lib/objects/obsidian.forms-ui';
+
+/* Components */
+
+@import './components/buttons';
+@import './components/color-blocks';
+@import './components/banner';
+@import './components/textarea';
+@import './components/time-slot';
+
+/* Utilities */
+
+@import 'obsidian.css/lib/utilities/obsidian.corners';
+@import 'obsidian.css/lib/utilities/obsidian.color-values';
+@import 'obsidian.css/lib/utilities/obsidian.backgrounds';
+@import 'obsidian.css/lib/utilities/obsidian.object-fit';
+@import 'obsidian.css/lib/utilities/obsidian.align';
+@import 'obsidian.css/lib/utilities/obsidian.floats';
+@import 'obsidian.css/lib/utilities/obsidian.display';
+@import 'obsidian.css/lib/utilities/obsidian.position';
+@import 'obsidian.css/lib/utilities/obsidian.zindex';
+@import 'obsidian.css/lib/utilities/obsidian.overflow';
+@import 'obsidian.css/lib/utilities/obsidian.spacing';
+@import 'obsidian.css/lib/utilities/obsidian.text-columns';
+@import 'obsidian.css/lib/utilities/obsidian.typography';
+
+
+:root {
+  --ff-sans-serif: 'Work Sans', sans-serif;
+  --white: #F3FAFF;
+  --liteBlue: #E1EDF4;
+  --green: #88DB6D;
+  --darkSlate: #3C586D;
+  --liteSlate: #AAB7C0;
+  --yellow: #FFD431;
+  --orangePink: #FF6444;
+
+  --gradient-greenLight-1: #C6FF22;
+  --gradient-greenLight-2: #5AC1A7;
+  --gradient-greenLight: linear-gradient(var(--gradient-greenLight-1) 0%, var(--gradient-greenLight-2) 100%);
+
+  --gradient-greenDark-1: #4D6D63;
+  --gradient-greenDark-2: #3E6675;
+  --gradient-greenDark: linear-gradient(var(--gradient-greenDark-1) 0%, var(--gradient-greenDark-2) 100%);
+}
+
+html {
+  background: var(--liteBlue);
+  color: var(--darkSlate);
+}

@@ -1,0 +1,9 @@
+.c-btn {
+  padding: 1rem;
+  background: var(--orangePink);
+  color: var(--white);
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
