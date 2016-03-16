@@ -1,36 +1,23 @@
 /* Settings */
 
-@import 'obsidian.css/lib/settings/obsidian.colors';
-@import 'obsidian.css/lib/settings/obsidian.settings';
-@import 'obsidian.css/lib/settings/obsidian.mq';
+@import 'obsidian.css/lib/settings';
 
 /* Generic */
 
-@import 'obsidian.css/lib/generic/obsidian.reset';
+@import 'obsidian.css/lib/generic';
 
 /* Elements */
 
-@import 'obsidian.css/lib/elements/obsidian.headlines';
-@import 'obsidian.css/lib/elements/obsidian.tables';
-@import 'obsidian.css/lib/elements/obsidian.forms';
-@import 'obsidian.css/lib/elements/obsidian.lists';
-@import 'obsidian.css/lib/elements/obsidian.links';
-@import 'obsidian.css/lib/elements/obsidian.images';
+@import 'obsidian.css/lib/elements';
 
 /* Objects */
 
-@import 'obsidian.css/lib/objects/obsidian.icons';
-@import 'obsidian.css/lib/objects/obsidian.containers';
-@import 'obsidian.css/lib/objects/obsidian.grid';
-@import 'obsidian.css/lib/objects/obsidian.intrinsic';
-@import 'obsidian.css/lib/objects/obsidian.flex';
-@import 'obsidian.css/lib/objects/obsidian.btns';
-@import 'obsidian.css/lib/objects/obsidian.media';
-@import 'obsidian.css/lib/objects/obsidian.forms-ui';
+@import 'obsidian.css/lib/objects';
 
 /* Components */
 
 @import './components/buttons';
+@import './components/header';
 @import './components/color-blocks';
 @import './components/banner';
 @import './components/textarea';
@@ -38,30 +25,21 @@
 
 /* Utilities */
 
-@import 'obsidian.css/lib/utilities/obsidian.corners';
-@import 'obsidian.css/lib/utilities/obsidian.color-values';
-@import 'obsidian.css/lib/utilities/obsidian.backgrounds';
-@import 'obsidian.css/lib/utilities/obsidian.object-fit';
-@import 'obsidian.css/lib/utilities/obsidian.align';
-@import 'obsidian.css/lib/utilities/obsidian.floats';
-@import 'obsidian.css/lib/utilities/obsidian.display';
-@import 'obsidian.css/lib/utilities/obsidian.position';
-@import 'obsidian.css/lib/utilities/obsidian.zindex';
-@import 'obsidian.css/lib/utilities/obsidian.overflow';
-@import 'obsidian.css/lib/utilities/obsidian.spacing';
-@import 'obsidian.css/lib/utilities/obsidian.text-columns';
-@import 'obsidian.css/lib/utilities/obsidian.typography';
+@import 'obsidian.css/lib/utilities';
 
 
 :root {
-  --ff-sans-serif: 'Work Sans', sans-serif;
+  --default: 'Work Sans', sans-serif;
+  --headlines: var(--default);
   --white: #F3FAFF;
-  --liteBlue: #E1EDF4;
+  --liteBlue-1: #E1EDF4;
+  --liteBlue-2: #E8EEEF;
   --green: #88DB6D;
   --darkSlate: #3C586D;
-  --liteSlate: #AAB7C0;
+  --liteSlate: #8BAFB7;
   --yellow: #FFD431;
-  --orangePink: #FF6444;
+  --orangePink-1: #E95017;
+  --orangePink-2: #FA7B40;
 
   --gradient-greenLight-1: #C6FF22;
   --gradient-greenLight-2: #5AC1A7;
@@ -70,9 +48,13 @@
   --gradient-greenDark-1: #4D6D63;
   --gradient-greenDark-2: #3E6675;
   --gradient-greenDark: linear-gradient(var(--gradient-greenDark-1) 0%, var(--gradient-greenDark-2) 100%);
+
+
+  --radius: 5px;
+  --form-border: 2px;
 }
 
 html {
-  background: var(--liteBlue);
+  background: var(--liteBlue-1);
   color: var(--darkSlate);
 }
