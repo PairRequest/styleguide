@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="u-anti">
   <head>
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,800,700,200,100,600' rel='stylesheet' type='text/css'>
@@ -7,11 +7,31 @@
     <title>Pair Request | Styleguide</title>
   </head>
   <body>
-    <header class="u-p3 u-al-center">
+    <header class="c-header u-p3">
+      <div class="o-grid u-cf">
+        <div class="o-grid__col--6/12">
+          <h1 class="h6 u-w400">Pair Request</h1>
+        </div>
+        <div class="o-grid__col--6/12 u-al-right">
+          <h1 class="h6 u-w400">Pair Request</h1>
+        </div>
+      </div>
+
+    </header>
+    <header class="u-p3 u-al-center@md">
       <h1 class="u-w300">Pair Request</h1>
     </header>
-    <section>
-      <a href="#" class="c-btn">Button</a>
+    <section class="o-container--md u-px3 u-mx-auto">
+      {{> banner ind="1/2" text="What do you need help with?" className="u-mb4" }}
+      {{> textarea placeholder="What do you need help with?" className="u-mb4" }}
     </section>
+    <section class="o-container--md u-px3 u-mx-auto">
+      {{> headlines }}
+    </section>
+    <section class="u-al-center">
+      <a href="#" class="c-btn">Button</a>
+      <a href="#" class="c-btn c-btn--green">Button</a>
+    </section>
+    {{> forms }}
   </body>
 </html>
