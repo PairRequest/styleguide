@@ -16,16 +16,16 @@ const paths      = require('./paths');
 
 const hbsOptions = {
   ignorePartials: true,
-  batch: [paths.partials]
+  batch: [paths.partials],
 };
 
 const hbsConfig = {
-  base: './'
+  base: './',
 };
 
 const processors = [
   atImport,
-  cssnext
+  cssnext,
 ];
 
 gulp.task('clean', () => {
@@ -76,8 +76,8 @@ gulp.task('images', () => {
 gulp.task('connect', () => {
   bs.init({
     server: {
-      baseDir: paths.build
-    }
+      baseDir: paths.build,
+    },
   });
 });
 
