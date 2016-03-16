@@ -1,0 +1,15 @@
+.c-textbox {
+  border-radius: var(--radius);
+  border: 0;
+  border-bottom: var(--form-border) solid;
+  min-height: 8rem;
+  resize: none;
+
+  background: white;
+  border-color: var(--liteSlate);
+}
+
+.c-textbox:focus {
+  outline: none;
+  border-color: var(--orangePink-2);
+}
