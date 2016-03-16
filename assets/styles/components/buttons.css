@@ -1,9 +1,32 @@
 .c-btn {
-  padding: 1rem;
-  background: var(--orangePink);
-  color: var(--white);
+  padding: .5rem 2rem;
+  border-radius: var(--radius);
+  border: 0;
+  border-bottom: var(--form-border) solid;
   display: inline-block;
   font-weight: 500;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: background 250ms ease-in-out;
+
+  background: var(--orangePink-2);
+  border-bottom-color: var(--orangePink-1);
+  color: var(--white);
+}
+
+.c-btn:hover {
+  background: var(--orangePink-1);
+  color: var(--white);
+}
+
+
+.c-btn--green {
+  color: var(--white);
+  background: var(--green);
+  border-bottom-color: color(var(--green) blackness(+15%));
+}
+
+.c-btn--green:hover {
+  background: color(var(--green) blackness(+15%));
 }
