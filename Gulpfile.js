@@ -87,4 +87,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('build', ['handlebars', 'styles', 'scripts', 'images']);
-gulp.task('default', ['clean', 'build', 'watch', 'connect']);
+gulp.task('default', ['build', 'watch', 'connect']);

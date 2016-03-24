@@ -12,23 +12,34 @@
         <div class="o-grid__col--6/12">
           <h1 class="h6 u-w400">Pair Request</h1>
         </div>
-        <div class="o-grid__col--6/12 u-al-right">
+        <div class="o-grid__col--6/12 u-right">
           <h1 class="h6 u-w400">Pair Request</h1>
         </div>
       </div>
 
     </header>
-    <header class="u-p3 u-al-center@md">
+    <header class="u-p3 u-center@md">
       <h1 class="u-w300">Pair Request</h1>
     </header>
     <section class="o-container--md u-px3 u-mx-auto">
       {{> banner ind="1/2" text="What do you need help with?" className="u-mb4" }}
-      {{> textarea placeholder="What do you need help with?" className="u-mb4" }}
+      <div class="">
+        {{> label text="A Brief Description" className="u-mb3"}}
+        {{> textarea placeholder="What do you need help with?" className="u-mb4" }}
+      </div>
+      <div class="">
+        {{> label text="The Whole Story" className="u-mb3"}}
+        {{> textarea placeholder="What do you need help with?" className="u-mb4" }}
+      </div>
+      <hr />
+      <div class="u-right u-py3">
+        <a href="#" class="c-btn">Button ></a>
+      </div>
     </section>
     <section class="o-container--md u-px3 u-mx-auto">
       {{> headlines }}
     </section>
-    <section class="u-al-center">
+    <section class="u-center u-py4 u-px3">
       <a href="#" class="c-btn">Button</a>
       <a href="#" class="c-btn c-btn--green">Button</a>
     </section>
