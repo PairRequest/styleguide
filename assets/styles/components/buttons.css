@@ -2,9 +2,9 @@
   padding: .5rem 2rem;
   border-radius: var(--radius);
   border: 0;
-  border-bottom: var(--form-border) solid;
+  border-bottom: 3px solid;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;

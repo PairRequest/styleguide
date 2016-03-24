@@ -1,36 +1,26 @@
-/* Settings */
-
 @import 'obsidian.css/lib/settings';
-
-/* Generic */
-
 @import 'obsidian.css/lib/generic';
-
-/* Elements */
-
 @import 'obsidian.css/lib/elements';
-
-/* Objects */
-
 @import 'obsidian.css/lib/objects';
 
-/* Components */
+/* Local Components */
 
 @import './components/buttons';
 @import './components/header';
 @import './components/color-blocks';
 @import './components/banner';
 @import './components/textarea';
+@import './components/label';
 @import './components/time-slot';
 
-/* Utilities */
 
 @import 'obsidian.css/lib/utilities';
 
 
 :root {
-  --default: 'Work Sans', sans-serif;
+  --default: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --headlines: var(--default);
+  --bkg: #F0F6F9;
   --white: #F3FAFF;
   --liteBlue-1: #E1EDF4;
   --liteBlue-2: #E8EEEF;
@@ -55,6 +45,6 @@
 }
 
 html {
-  background: var(--liteBlue-1);
+  background: var(--bkg);
   color: var(--darkSlate);
 }
